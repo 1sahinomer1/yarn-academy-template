@@ -1,6 +1,13 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import styled from 'styled-components'
+
+const Title = styled.h1`
+  font-size: 1.5em;
+  text-align: center;
+  color: palevioletred;
+`
 
 export default function Home() {
   return (
@@ -12,6 +19,8 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
+        <Title>Welcome to 90Pixel Academy</Title>
+
         <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
